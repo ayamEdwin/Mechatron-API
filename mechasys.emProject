@@ -1,0 +1,86 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="mechasys" version="2" target="8">
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="Level 2"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 2 balanced" />
+  <project Name="mechasys">
+    <configuration
+      LIBRARY_IO_TYPE="RTT"
+      Name="Common"
+      Target="STM32F030RCTx"
+      arm_architecture="v6M"
+      arm_compiler_variant="SEGGER"
+      arm_core_type="Cortex-M0"
+      arm_endian="Little"
+      arm_fp_abi="Soft"
+      arm_fpu_type="None"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="2048"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="ROM;0x08000000;0x00040000;RAM;0x20000000;0x00008000"
+      arm_target_device_name="STM32F030RC"
+      c_preprocessor_definitions="ARM_MATH_CM0;STM32F030xC;__STM32F030_SUBFAMILY;__STM32F0XX_FAMILY;__NO_FPU_ENABLE;USE_FULL_LL_DRIVER"
+      c_user_include_directories="$(ProjectDir)/CMSIS_5/CMSIS/Core/Include;$(ProjectDir)/STM32F0xx/Device/Include;C:\\Users\\eDDie\\Documents\\SEGGER Embedded Studio Projects\\mechasys\\STM32F0xx_HAL_Driver\\Inc;C:\\Users\\eDDie\\Documents\\SEGGER Embedded Studio Projects\\mechasys\\STM32F0xx_HAL_Driver\\Src;C:\\Users\\eDDie\\Documents\\SEGGER Embedded Studio Projects\\mechasys\\System Configuration;C:\\Users\\eDDie\\Documents\\SEGGER Embedded Studio Projects\\mechasys\\Board"
+      debug_register_definition_file="$(ProjectDir)/STM32F0x0_Registers.xml"
+      debug_stack_pointer_start="__stack_end__"
+      debug_start_from_entry_point_symbol="Yes"
+      debug_target_connection="J-Link"
+      gcc_entry_point="Reset_Handler"
+      link_linker_script_file="$(ProjectDir)/STM32F0xx_Flash.icf"
+      linker_memory_map_file="$(ProjectDir)/STM32F030RCTx_MemoryMap.xml"
+      macros="DeviceHeaderFile=$(PackagesDir)/STM32F0xx/Device/Include/stm32f0xx.h;DeviceSystemFile=$(PackagesDir)/STM32F0xx/Device/Source/system_stm32f0xx.c;DeviceVectorsFile=$(PackagesDir)/STM32F0xx/Source/stm32f030xc_Vectors.s;DeviceFamily=STM32F0xx;DeviceSubFamily=STM32F030;Target=STM32F030RCTx"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Board">
+      <file file_name="Board/mechatron.cpp" />
+      <file file_name="Board/mechatron.h" />
+    </folder>
+    <folder Name="CMSIS Files">
+      <file file_name="STM32F0xx/Device/Include/stm32f0xx.h" />
+      <file file_name="STM32F0xx/Device/Source/system_stm32f0xx.c">
+        <configuration
+          Name="Common"
+          default_code_section=".init"
+          default_const_section=".init_rodata" />
+      </file>
+    </folder>
+    <folder Name="Script Files">
+      <file file_name="STM32F0xx/Scripts/STM32F0xx_Target.js">
+        <configuration Name="Common" file_type="Reset Script" />
+      </file>
+    </folder>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="main.cpp" />
+    </folder>
+    <folder
+      Name="STM32F0xx_HAL_Driver"
+      exclude=""
+      filter=""
+      path="STM32F0xx_HAL_Driver"
+      recurse="Yes" />
+    <folder
+      Name="System Configuration"
+      exclude=""
+      filter=""
+      path="System Configuration"
+      recurse="Yes" />
+    <folder Name="System Files">
+      <file file_name="SEGGER_THUMB_Startup.s" />
+      <file file_name="STM32F0xx/Source/stm32f030xc_Vectors.s">
+        <configuration Name="Common" file_type="Assembly" />
+      </file>
+      <file file_name="STM32F0xx/Source/STM32F0xx_Startup.s" />
+    </folder>
+  </project>
+</solution>
