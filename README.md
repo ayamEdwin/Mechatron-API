@@ -77,17 +77,6 @@
     
       #include "mechatron.h"
   
-      #ifdef __cplusplus
-      extern "C" {
-      #endif
-      
-      #include "System Configration.h"
-      #include "stm32f0xx_ll_system.h"
-      
-      #ifdef __cplusplus
-      }
-      #endif
-  
   
       int main(){
         //set up code
