@@ -33,8 +33,10 @@
 
   ## Installation
   1. Clone this repository to your local machine:
-     `git clone https://github.com/ayamEdwin/mechasys.git`
-  2. Open the project in Sergger Embedded Studio:
+     ```bash
+     git clone https://github.com/ayamEdwin/mechasys.git
+     ```
+  3. Open the project in Sergger Embedded Studio:
      - Launch Sergger Embedded Studio
      - Select "File" -> "Open Solution"
      - Navigate to the cloned repository and
