@@ -7,7 +7,7 @@
 - [Prerequisites](#Prerequisites)
 - [Installation](#Installation)
 - [Configuration](#Configuration)
-- [API-Usage-Examples](#API Usage Examples)
+- [API Usage Examples](#API-Usage-Examples)
 - [Collaboration](#Collaboration)
 - [License](#License)
 
@@ -62,7 +62,7 @@
      - Video will soon be out for further help
     
   ## API-Usage-Examples
-  ```
+  ```cpp
       // This example code illustrate the use of DigitalOut to blink an on board LED
       // connected to pin "PD2".
     
