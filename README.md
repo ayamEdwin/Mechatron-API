@@ -114,7 +114,7 @@
   via email [setsoafiaedwin7@gmail.com].
 
   Please include detailed information about your proposed changes
-  or questions## License
+  or questions.
 
 ## License
 [MIT LICENSE](https://github.com/ayamEdwin/mechasys/blob/main/LICENSE)
