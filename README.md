@@ -62,7 +62,7 @@
      - Video will soon be out for further help
     
   ## API-Usage-Examples
-  '''
+  ```
       // This example code illustrate the use of DigitalOut to blink an on board LED
       // connected to pin "PD2".
     
@@ -92,7 +92,7 @@
               hisThread::sleep_for(100000); // delays for unknown number of seconds
           }
       }
-  '''
+  ```
 
   ## Collaboration
   I welcome contributions to this project. If you would like
