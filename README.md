@@ -111,7 +111,7 @@
   3. Submit  a pull request
  
   For more substantial contributions or questions, please contact me
-  via email [Contact me via email](htps://www.setsoafiaedwin7@gmail.com).
+  via email [Contact me via email](https://www.setsoafiaedwin7@gmail.com).
 
   Please include detailed information about your proposed changes
   or questions.
