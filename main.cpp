@@ -1,48 +1,29 @@
-#include "mechatron.h"
+    // This example code illustrate the use of DigitalOut to blink an on board LED
+    // connected to pin "PD2".
+  
+    #include "mechatron.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#include "System Configration.h"
-#include "stm32f0xx_ll_system.h"
-
-#ifdef __cplusplus
-}
-#endif
-
-
-int main(){
-//set up
-  SystemClock_Config();
-  DigitalOut ON_BOARD_LED(PD2);
-  DigitalOut EXTERNAL_LED(PA3);
-  DigitalIn button(PA0);
-
-  // simulates code flashing
-  for (int pulse = 0; pulse<=10; pulse++){
-    ON_BOARD_LED.write(0);
-    ThisThread::sleep_for(100000);
-    ON_BOARD_LED.write(1);
-    ThisThread::sleep_for(100000);
-  }
-
-  // power indicator
-  ON_BOARD_LED.write(1);
-  button.mode(PullDown);
+    #ifdef __cplusplus
+    extern "C" {
+    #endif
+    
+    #include "System Configration.h"
+    #include "stm32f0xx_ll_system.h"
+    
+    #ifdef __cplusplus
+    }
+    #endif
 
 
-  for(;;){
-  if (button.read() == 1){
-       EXTERNAL_LED.write(1);
-       ON_BOARD_LED.write(0);
-  }
-  else{
-      // printf("%i", button.read());
-      EXTERNAL_LED.write(0);
-      ON_BOARD_LED.write(1);
-  }
-      
-  }
-
-}
+    int main(){
+      //set up code
+      SystemClock_Config(); // configures system clock
+      DigitalOut ON_BOARD_LED(PD2); // Creates a DigitalOut object on PD2
+  
+      while(1){
+            ON_BOARD_LED.write(0); // Turns on board LED off
+            ThisThread::sleep_for(100000); // delays for unknown number of seconds
+            ON_BOARD_LED.write(1); // Turns on board LED on
+            hisThread::sleep_for(100000); // delays for unknown number of seconds
+        }
+    }
