@@ -1,4 +1,4 @@
-#  STM32F030RTC6 API (Mechatronic Sytems API)
+#   API (Mechatronic Sytems API)
 ### INSPIRED BY RETIRING [MBED API](https://os.mbed.com/docs/mbed-os/v6.16/apis/index.html)
 
 
@@ -12,10 +12,17 @@
 - [License](#License)
 
   ## Overview
-  This repository (mechasys) provides an abstraction layer for the STM32F030RTC6 microcontroller,
+  This repository (mechasys) provides an abstraction layer for the STM32F030x4/x6/x8/xC and STM32F070x6/xB
+  advanced Arm®-based 32-bit MCUs,
   simplifying hardware interaction for undergraduate students for learning embedded systems.
   The API includes modules for digital I/O, analog input, and other peripherals, abstracting away
   low-level hardware details.
+  For the purpose of this documentation, STM32F030x4/x6/x8/xC and STM32F070x6/xB
+  microcontrollers are referred to as STM32F0x0.
+  The STM32F0x0 is a family of microcontrollers with different memory sizes, packages and
+  peripherals.
+  For ordering information, mechanical and electrical device characteristics, please refer to
+  the corresponding datasheet.
 
   ## Prerequisites
   Before using this API, ensure you have the following installed and succesfully configured:
@@ -26,7 +33,7 @@
   - Git (For repository cloning)
  
   ### Hardware Requirements
-  - STM32FO30RTC6 microcontroller development board.
+  - STM32FO30RTC6 microcontroller development board - to order, contact +233205346998.
   - ST-Link/V2 debugger (or compatible J-Link debugger)
   - USB cables for power and debugging.
  
