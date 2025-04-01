@@ -110,8 +110,7 @@
   or questions## License
 
 ## License
-
-[MIT LICENSE](#LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
  
   
         
