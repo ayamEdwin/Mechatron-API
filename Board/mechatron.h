@@ -5,6 +5,18 @@
 #include <stdio.h>
 
 
+#ifdef __cplusplus
+extern "C" {
+    #endif
+    
+    #include "System Configration.h"
+    #include "stm32f0xx_ll_system.h"
+    
+    #ifdef __cplusplus
+  }
+#endif
+
+
 typedef enum{
   // PORT A
   PA0, PA1, PA2, PA3, PA4, PA5, PA6, PA7, PA8,
